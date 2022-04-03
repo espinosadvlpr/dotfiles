@@ -8,6 +8,9 @@ Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
+" Onedark theme
+Plug 'joshdick/onedark.vim' 
+
 " Syntax
 Plug 'sheerun/vim-polyglot'
 
@@ -38,6 +41,9 @@ call plug#end()
 colorscheme gruvbox
 let g:groupbox_contrast_dark="hard"
 
+" Theme
+" colorscheme onedark
+
 " Config
 set t_Co=256
 syntax on
@@ -66,6 +72,9 @@ set smartcase
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev find NERDTreeFind
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 " scroll
 nnoremap <C-j> 10<C-e>
